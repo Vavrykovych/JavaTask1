@@ -1,6 +1,6 @@
 package Classes;
 
-public class MatrixTask {
+public class Tasks {
     public static int[] Task1(int[][] matrix) {
         int[] res = new int[matrix.length];
         for (int i = 0; i < matrix.length; i++) {
@@ -14,7 +14,6 @@ public class MatrixTask {
         }
         return res;
     }
-
     public static int SumDigits(int number) {
         int res = 0;
         while (number != 0) {
@@ -23,4 +22,19 @@ public class MatrixTask {
         }
         return Math.abs(res);
     }
+    public static void Task2(String words){
+        for(var word: words.split(",")){
+            StringBuffer str = new StringBuffer(word);
+            for(int i =0;i<str.length();i++){
+                if(str.charAt(i) == 't'){
+                    str.insert(i+1,'h');
+                }
+            }
+            System.out.println(str);
+        }
+
+
+    }
+
+
 }

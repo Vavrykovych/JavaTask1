@@ -1,4 +1,5 @@
-import Classes.MatrixTask;
+import Classes.Tasks;
+import InstitutionHierarchy.School;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -20,7 +21,7 @@ public class Main {
             }
         }
 
-        var vector = MatrixTask.Task1(matrix);
+        var vector = Tasks.Task1(matrix);
         System.out.println("Matrix:");
         for (int i = 0; i < n; i++) {
             for(int j =0;j<m;j++){
@@ -29,13 +30,14 @@ public class Main {
             System.out.println();
         }
         System.out.println("Result: ");
-        for (int i = 0; i < vector.length; i++) {
-            System.out.print(vector[i] + " ");
+        for (int j : vector) {
+            System.out.print(j + " ");
         }
         System.out.println();
         System.out.println("----------Task2----------");
-
-
+        String words = "aaata,wordttword,ttt,wordt,wordttt";
+        Tasks.Task2(words);
+        System.out.println("----------Task3----------");
 
     }
 }
