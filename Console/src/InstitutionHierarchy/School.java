@@ -16,4 +16,22 @@ public class School extends Institution {
         StudentsNumber = studentsNumber;
     }
 
+    public int getNumber() {
+        return Number;
+    }
+
+    public int getStudentsNumber() {
+        return StudentsNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "Number=" + Number +
+                ", StudentsNumber=" + StudentsNumber +
+                ", Name='" + Name + '\'' +
+                ", Address='" + Address + '\'' +
+                ", FoundationYear=" + FoundationYear +
+                '}';
+    }
 }

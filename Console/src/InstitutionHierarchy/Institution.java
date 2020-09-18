@@ -2,7 +2,7 @@ package InstitutionHierarchy;
 
 import java.util.Calendar;
 
-public class Institution {
+abstract public class Institution {
     String Name;
     String Address;
     int FoundationYear;
@@ -24,5 +24,14 @@ public class Institution {
     public int getFoundationYear()
     {
         return  FoundationYear;
+    }
+
+    @Override
+    public String toString() {
+        return "Institution{" +
+                "Name='" + Name + '\'' +
+                ", Address='" + Address + '\'' +
+                ", FoundationYear=" + FoundationYear +
+                '}';
     }
 }

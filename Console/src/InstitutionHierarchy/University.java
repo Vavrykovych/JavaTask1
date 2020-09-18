@@ -17,4 +17,15 @@ public class University extends Institution{
     public String getAccreditationLevel(){
         return AccreditationLevel;
     }
+
+    @Override
+    public String toString() {
+        return "University{" +
+                "FacultiesNumber=" + FacultiesNumber +
+                ", AccreditationLevel='" + AccreditationLevel + '\'' +
+                ", Name='" + Name + '\'' +
+                ", Address='" + Address + '\'' +
+                ", FoundationYear=" + FoundationYear +
+                '}';
+    }
 }
