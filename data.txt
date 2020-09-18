@@ -4,8 +4,8 @@ School School3 Address3 1923 12 1400
 School School4 Address4 1924 13 500
 School School5 Address5 1925 14 1600
 School School6 Address6 1926 15 1700
-University University1 Address1 1600 10 University
-University University2 Address2 1700 11 University
-University University3 Address3 1700 12 University
-University University4 Address4 1800 13 University
-University University5 Address5 1900 14 University
+University University1 Address1 1600 10 Level1
+University University2 Address2 1700 11 Level2
+University University3 Address3 2000 12 Level2
+University University4 Address4 1800 13 Level1
+University University5 Address5 1900 14 Level1

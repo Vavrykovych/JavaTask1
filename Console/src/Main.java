@@ -40,7 +40,6 @@ public class Main {
         for (int j : vector) {
             System.out.print(j + " ");
         }
-        System.out.println();
         System.out.println("----------Task2----------");
         String words = "aaata,wordttword,ttt,wordt,wordttt";
         System.out.println("Before\n" + words + "\nAfter");
@@ -61,11 +60,11 @@ public class Main {
             }
             line = reader.readLine();
         }
-
         System.out.println("Reading from file.");
         for(var i:institutions){
             System.out.println(i);
         }
+        System.out.println();
         InstitutionYearComparator comparator = new InstitutionYearComparator();
         institutions.sort(comparator);
 
@@ -73,7 +72,7 @@ public class Main {
         for(var i:institutions){
             System.out.println(i);
         }
-
+        System.out.println();
         School MinStudentsSchool = null;
         for(var i:institutions){
             if(MinStudentsSchool == null && i instanceof School){
@@ -84,7 +83,7 @@ public class Main {
             }
         }
         System.out.println(MinStudentsSchool != null ? "School with min students number" + MinStudentsSchool.toString(): "Schools not find.");
-
+        System.out.println();
         System.out.println("Input acreditation level");
         String level = sc.next();
         for(var i:institutions){
@@ -92,6 +91,6 @@ public class Main {
                 System.out.println(i);
             }
         }
-
+        System.out.println();
     }
 }
